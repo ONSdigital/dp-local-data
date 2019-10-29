@@ -1,13 +1,13 @@
 # dp-local-data
 
-`dp-local-data` is a cmd-cli tool that enabling developer to easily:
- - Clean all CMD data out of their environment.
+`dp-local-data` is a cmd-cli tool enabling developers to easily:
+ - Clean all CMD data out of their local environment.
  - Import the prerequisite hierarchy/codelist data required to import datasets.
  
-The default config will load the hierarchy and code lists requires for the `Suicides` dataset. 
+The default config will load the hierarchy and code lists required for the `Suicides` dataset. 
 
 ## Prerequisites
-`dp-local-data` uses Go Modules so required a go version of 1.11 of higher. 
+`dp-local-data` uses Go Modules so requires a go version of **1.11** or later. 
 
 `dp-local-data` requires:
 - `dp-code-list-scripts` 
@@ -37,7 +37,7 @@ If the install was successful running
 dp-local-data
 ```
 Should present you with a help menu similar to:
-```bash
+```
 dp-local-data is a tool for cleaning CMD data out of local dev env and/or importing the prerequisite hierarchy/codelist data required to successfully import datasets
 
 Usage:
