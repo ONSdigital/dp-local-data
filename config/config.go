@@ -1,7 +1,9 @@
 package config
 
 import (
+	"errors"
 	"io/ioutil"
+	"os"
 
 	"gopkg.in/yaml.v2"
 )
@@ -15,7 +17,12 @@ type Config struct {
 }
 
 func Get() (*Config, error) {
-	b, err := ioutil.ReadFile("config/config.yml")
+	path := os.Getenv("DP_LOCAL_DATA")
+	if len(path) == 0 {
+		return nil, errors.New("no config file specified")
+	}
+
+	b, err := ioutil.ReadFile(path)
 	if err != nil {
 		return nil, err
 	}
