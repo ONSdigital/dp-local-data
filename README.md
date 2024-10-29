@@ -1,5 +1,7 @@
 # dp-local-data
 
+⚠️ This repository will be archived in October 2024 as it is no longer in development. ⚠️
+
 `dp-local-data` is a cmd-cli tool enabling developers to easily:
  - Clean all CMD data out of their local environment.
  - Import the prerequisite hierarchy/codelist data required to import datasets.
